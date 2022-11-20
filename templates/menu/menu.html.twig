@@ -1,0 +1,385 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <header id="header" class="fixed-top d-flex align-items-cente">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="index.html">La casa del cibo</a></h1>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#why-us">Why us</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+            <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Login</a>
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Welcome to <span>La casa del cibo</span></h1>
+                    <h2>Delivering great food for more than 18 years!</h2>
+
+                    <div class="btns">
+                        <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+                        <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Hero -->
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="about-img">
+                            <img src="assets/img/about.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                        <h3>La casa del cibo: A heaven in earth for italian food lovers.</h3>
+                        <p class="fst-italic">
+                            Since our modest beginnings in 2004 with a little space in Lac 2 Tunis, La casa del cibo development has been enlivened with the energy to cook and serve Italian plates.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Our Restaurant is the best italian Restaurant in tunisia.</li>
+                            <li><i class="bi bi-check-circle"></i> Our goal is to give you a unique experience that will not break the bank.</li>
+                            <li><i class="bi bi-check-circle"></i> Our chefs are put through an in-depth interview process and testing. They are servsafe certified, insured and experienced.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Why Us</h2>
+                    <p>Why Choose Our Restaurant</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                            <span>01</span>
+                            <h4>Friendly environment</h4>
+                            <p>Our motto is to make the atmosphere friendly and as efficient as possible. The waiters are patiently and happily take your order and serve the meal in the estimated time. A nice and lovely environment forces you to come back for another date.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                            <span>02</span>
+                            <h4>Perfect food presentation</h4>
+                            <p>In a food restaurant, food plating is a central idea to keep guests happy as they experience your restaurant. People scan the taste before eating, so our creative plating can enhance both the appearance and the flavor of the food.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                            <span>03</span>
+                            <h4> Takeaway facility </h4>
+                            <p>We’re not limited our options to just have a meal at our place. You’re most welcomed if you want to throw a party at your home and want our best Italian food in Tunisia to please your guests.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Why Us Section -->
+        <!-- ======= Menu Section ======= -->
+        <section id="menu" class="menu section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Menu</h2>
+                    <p>Check Our Tasty Menu</p>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="menu-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-starters">Starters</li>
+                            <li data-filter=".filter-salads">Salads</li>
+                            <li data-filter=".filter-specialty">Specialty</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="col-lg-6 menu-item filter-starters">
+                        <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Lobster Bisque</a><span>18 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Lorem, deren, trataro, filede, nerada
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-specialty">
+                        <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Bread Barrel</a><span>21 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Lorem, deren, trataro, filede, nerada
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-starters">
+                        <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Crab Cake</a><span>24 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-salads">
+                        <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Caesar Selections</a><span>25 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Lorem, deren, trataro, filede, nerada
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-specialty">
+                        <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Tuscan Grilled</a><span>28 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-starters">
+                        <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Mozzarella Stick</a><span>15 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Lorem, deren, trataro, filede, nerada
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-salads">
+                        <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Greek Salad</a><span>30 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-salads">
+                        <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Spinach Salad</a><span>30 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-specialty">
+                        <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+                        <div class="menu-content">
+                            <a href="#">Lobster Roll</a><span>35 DT</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Menu Section -->
+
+        <!-- ======= Book A Table Section ======= -->
+
+        <section id="book-a-table" class="book-a-table">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Reservation</h2>
+                    <p>Book a Table</p>
+                </div>
+
+                <form  action="{{ path('app_add') }}"method="POST" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100" name='f'>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                            <div class="validate"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+                            <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+                            <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+                            <input type="number" class="form-control" name="nb" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                            <div class="validate"></div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control"  name="description" rows="5" placeholder="Message"></textarea>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="mb-3">
+                    </div><div class="text-center"><button type="submit" name="ok">Book a table</button></div>
+                </form>
+
+            </div>
+
+        </section><!-- End Book A Table Section -->
+
+        <!-- ======= Gallery Section ======= -->
+
+        <section id="gallery" class="gallery">
+
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Gallery</h2>
+                    <p>Some photos from Our Restaurant</p>
+                </div>
+            </div>
+
+            <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row g-0">
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Gallery Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>La casa del cibo</h3>
+                            <p>
+                                liberty street, Lac 2, Tunis<br><br>
+                                <strong>Phone:</strong> +216 71 345 864<br>
+                                <strong>Email:</strong> contact@lacasa.com<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer><!-- End Footer -->
+
+
+{% endblock %}
